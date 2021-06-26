@@ -1,11 +1,11 @@
-package com.ss.ParkingService;
+package com.sstack.ParkingService;
 
-import com.ss.Driver.Driver;
-import com.ss.Driver.DriverService;
-import com.ss.Driver.DriverServiceImpl;
-import com.ss.Vehicle.Vehicle;
-import com.ss.Vehicle.VehicleService;
-import com.ss.Vehicle.VehicleServiceImpl;
+import com.sstack.Driver.Driver;
+import com.sstack.Driver.IDriverService;
+import com.sstack.Driver.DriverServiceImpl;
+import com.sstack.Vehicle.Vehicle;
+import com.sstack.Vehicle.IVehicleService;
+import com.sstack.Vehicle.VehicleServiceImpl;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,7 +14,7 @@ import java.util.PriorityQueue;
 
 // Parking Service Implementation for all required operations to be done with our parking lot
 // Achieved Inheritance by implementing interface
-public class ParkingServiceImpl implements ParkingService {
+public class ParkingServiceImpl implements IParkingService {
 
     // Using Singleton Pattern to make sure only one instance of each service will get create.
     private static ParkingServiceImpl parkingService;
@@ -48,8 +48,8 @@ public class ParkingServiceImpl implements ParkingService {
 
 
     // Injecting instances of Driver & Vehicle Service
-    private DriverService driverService = DriverServiceImpl.getInstance();
-    private VehicleService vehicleService = VehicleServiceImpl.getInstance();
+    private IDriverService driverService = DriverServiceImpl.getInstance();
+    private IVehicleService vehicleService = VehicleServiceImpl.getInstance();
 
     // Runtime Polymorphism via Overriding
     // Method to create parking lot with given size

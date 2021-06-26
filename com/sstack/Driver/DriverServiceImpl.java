@@ -1,6 +1,6 @@
-package com.ss.Driver;
+package com.sstack.Driver;
 
-import com.ss.Vehicle.Vehicle;
+import com.sstack.Vehicle.Vehicle;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -9,7 +9,7 @@ import java.util.Set;
 
 // Driver Service Implementation to interact with Driver entity & operations
 // Achieved Inheritance by implementing interface
-public class DriverServiceImpl implements DriverService{
+public class DriverServiceImpl implements IDriverService{
     // Using HashMap to store all drivers data with an index on age (primary key)
     // Why HashMap? POST, GET, UPDATE & DELETE request on Driver Service will take O(1) i.e. constant time complexity.
     private HashMap<Integer, Driver> drivers = new HashMap<>();

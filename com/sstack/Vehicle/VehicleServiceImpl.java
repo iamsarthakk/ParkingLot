@@ -1,4 +1,4 @@
-package com.ss.Vehicle;
+package com.sstack.Vehicle;
 
 import java.util.HashMap;
 import java.util.regex.Matcher;
@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 // Vehicle Service Implementation to interact with Vehicle entity & operations
 // Achieved Inheritance by implementing interface
-public class VehicleServiceImpl implements VehicleService {
+public class VehicleServiceImpl implements IVehicleService {
     // Using HashMap to store all vehicle data with an index on vehicle reg number (primary key)
     // Why HashMap? POST, GET, UPDATE & DELETE request on Vehicle Service will take O(1) i.e. constant time complexity.
     private HashMap<String,Vehicle> vehicles = new HashMap<>();

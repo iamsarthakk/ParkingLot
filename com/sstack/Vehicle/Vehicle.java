@@ -1,4 +1,4 @@
-package com.ss.Vehicle;
+package com.sstack.Vehicle;
 
 // Vehicle entity
 public class Vehicle {

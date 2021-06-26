@@ -1,7 +1,7 @@
-package com.ss.ParkingService;
+package com.sstack.ParkingService;
 
-import com.ss.Driver.Driver;
-import com.ss.Vehicle.Vehicle;
+import com.sstack.Driver.Driver;
+import com.sstack.Vehicle.Vehicle;
 
 // Ticket entity to encapsulate driver and vehicle required information
 public class Ticket {
