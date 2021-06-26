@@ -2,8 +2,8 @@
 
 
 ## 1. On Replit
-1. Open URL: 
-2. Chenge input.txt as per your your test case
+1. Open URL: https://replit.com/@iamsarthakk/ParkingLot?v=1
+2. Change input.txt as per your your test case
 3. Run
 
 ## 2. On local Machine
