@@ -21,5 +21,5 @@ Install Java , Ecllipse IDE
 1. Singleton Pattern
 2. OOP Principles - Inheritance, Encapsulation, Abstaction and Polymorphisms
 3. Data Structures: <br/>
-  1.1 HashMap - For O(1) access of ticket data, driver data, slot etc.
+  1.1 HashMap - For O(1) access of ticket data, driver data, slot etc. <br/>
   1.2 Min-Heap - To store all available or free spots and accessing the min number free slot in O(1) time
